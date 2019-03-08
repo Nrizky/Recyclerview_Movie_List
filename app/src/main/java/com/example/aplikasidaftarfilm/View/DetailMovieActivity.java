@@ -8,8 +8,9 @@ import android.widget.TextView;
 import com.example.aplikasidaftarfilm.R;
 
 public class DetailMovieActivity extends AppCompatActivity {
-    TextView MovieTitle, Overview;
+    TextView MovieTitle;
     ImageView MoviePoster;
+    TextView Overview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

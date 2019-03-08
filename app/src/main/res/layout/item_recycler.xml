@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
     android:layout_marginTop="5dp"
     android:layout_marginRight="10dp"
-    android:background="@color/white"
+    android:background="@color/cream"
     android:orientation="horizontal"
     android:paddingLeft="5dp"
     android:paddingTop="5dp"
@@ -28,8 +27,10 @@
             android:id="@+id/tv_movieTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:gravity="center_vertical"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
             android:maxLines="2"
             android:paddingLeft="20dp"
             android:text="Judul Film"
@@ -40,12 +41,14 @@
         <TextView
             android:id="@+id/tv_overview"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
-            android:maxLines="4"
+            android:maxLines="5"
             android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:text="Movie Synopsis"
+            android:textColor="@color/black"
             android:textSize="15sp" />
     </LinearLayout>
 </LinearLayout>

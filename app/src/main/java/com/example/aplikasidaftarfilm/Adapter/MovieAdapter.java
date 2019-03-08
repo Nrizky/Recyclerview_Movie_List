@@ -37,7 +37,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, final int i) {
+    public void onBindViewHolder(@NonNull MovieAdapter.ViewHolder viewHolder, final int i) {
         viewHolder.tvJudul.setText(movieModels.get(i).getMovieTitle());
         viewHolder.imageView.setImageResource(movieModels.get(i).getMoviePoster());
         viewHolder.overview.setText(movieModels.get(i).getOverview());
