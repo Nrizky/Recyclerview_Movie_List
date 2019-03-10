@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements MainView{
         rvVertical = findViewById(R.id.rvV);
         switch (item.getItemId()) {
             case R.id.hotizontalItem:
-                Toast.makeText(this, "Menampilakan Horizontal Layout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Menampilakan hasil secara Horizontal Layout, Geser Gambar ke  arah Kanan untuk melihat daftar Film lainnya dari Marvel Studio", Toast.LENGTH_LONG).show();
                 rvHorizontal.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, true));
                 adapter = new MovieAdapter(this, movieModels);
                 rvHorizontal.setAdapter(adapter);
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements MainView{
                 return true;
 
             case R.id.staggeredItem:
-                Toast.makeText(this, "Menampilakan Staggered Grid Layout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Menampilakan hasil secara Staggered Grid Layout, Geser Gambar ke arah Kiri untuk melihat daftar Film lainnya dari Marver Studio", Toast.LENGTH_LONG).show();
                 rvStaggered.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.HORIZONTAL));
                 adapter = new MovieAdapter(this, movieModels);
                 rvStaggered.setAdapter(adapter);
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements MainView{
 
             case R.id.gridItem:
                 Toast.makeText(this, "Menampilakan Grid Layout", Toast.LENGTH_SHORT).show();
-                rvGrid.setLayoutManager(new GridLayoutManager(this, 2));
+                rvGrid.setLayoutManager(new GridLayoutManager(this, 4));
                 adapter = new MovieAdapter(this, movieModels);
                 rvGrid.setAdapter(adapter);
                 presenter = new MoviePresenter(this, this);
