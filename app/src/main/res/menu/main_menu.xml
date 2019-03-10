@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/hotizontalItem"
+        android:title="Horizontal Layout" />
+
+    <item
+        android:id="@+id/staggeredItem"
+        android:title="Staggered Grid" />
+
+    <item
+        android:id="@+id/gridItem"
+        android:title="Grid Layout" />
+
+    <item
+        android:id="@+id/verticalItem"
+        android:title="Vertical Layout" />
+
+</menu>

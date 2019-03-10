@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cream"
     tools:context=".View.MainActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <LinearLayout
+        android:id="@+id/linearlayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/maroon" />
+        android:orientation="vertical">
 
-</LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
